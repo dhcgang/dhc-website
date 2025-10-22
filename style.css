@@ -1,242 +1,80 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
-body {
-  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  color: #eee;
-  background-color: #0b001a; /* dark purple-black */
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-/* Navigation */
+/* ===== Nav socials (left of About) ===== */
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 25px 50px;
-  background: rgba(30, 0, 60, 0.8);
-  backdrop-filter: blur(8px);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
+  justify-content: space-between;
+  gap: 24px;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #b25cff;
-}
-
-.nav-links {
-  list-style: none;
+.nav-left {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 18px;
 }
 
-.nav-links a {
-  color: #eee;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+.logo { display:flex; align-items:center; gap:10px; }
+.logo img { height:28px; width:28px; border-radius:6px; }
+.logo span { font-weight:700; font-size:1.1rem; color:#e9d5ff; }
 
-.nav-links a:hover {
-  color: #b25cff;
-}
-
-.nav-links .cta {
-  background-color: #b25cff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(180deg, #1a0033, #0b001a);
-  padding-top: 180px;
-  text-align: center;
-  min-height: 90vh;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  color: #ccc;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-.btn {
-  background-color: #b25cff;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #9b4ff7;
-}
-
-/* Sections */
-.section {
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  color: #b25cff;
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
-.section p {
-  max-width: 800px;
-  margin: 0 auto;
-  color: #ddd;
-}
-
-/* Tokenomics */
-.tokenomics-list {
-  list-style: none;
-  text-align: left;
-  max-width: 420px;
-  margin: 30px auto;
-}
-
-.tokenomics-list li {
-  background: rgba(178, 92, 255, 0.1);
-  border-left: 4px solid #b25cff;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 8px;
-}
-
-/* Community */
-.community {
-  background: linear-gradient(180deg, #0b001a, #1a0033);
-}
-
-.social-links a {
-  display: inline-block;
-  margin-top: 20px;
-  color: #b25cff;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-.footer {
-  background: #05000f;
-  text-align: center;
-  padding: 40px 20px;
-  color: #aaa;
-  font-size: 0.9rem;
-}
-
-.footer strong {
-  color: #b25cff;
-}
-
-/* Small screens */
-@media (max-width: 700px) {
-  .nav { padding: 16px 20px; }
-  .nav-links { gap: 14px; font-size: 0.95rem; }
-  .hero-content h1 { font-size: 2.2rem; }
-}
-
-
-.logo {
+.socials {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
-.logo img {
-  height: 36px;
-  width: 36px;
-  object-fit: cover;
-  border-radius: 8px;
+.socials-label {
+  font-size: 0.95rem;
+  color: #cdb3ff;
+  opacity: 0.9;
 }
-/* Contract Section */
+.social-icon img {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.05));
+  transition: transform .2s ease, filter .2s ease, opacity .2s ease;
+}
+.social-icon img:hover {
+  transform: translateY(-2px) scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(181,101,255,.6));
+  opacity: 1;
+}
+
+/* Keep nav links spaced nicely */
+.nav-links { display:flex; align-items:center; gap: 22px; }
+
+/* ===== Token Contract centered ===== */
 .contract-section {
+  max-width: 900px;
+  margin: 40px auto 0;
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #110024, #1b0040);
-  color: #fff;
+  padding: 40px 16px 56px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.06);
 }
-
-.contract-section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 12px;
-  color: #b565ff;
-  text-shadow: 0 0 15px #a855f7;
-}
-
-.contract-section p {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
-  color: #e0b3ff;
-}
-
-.pumpfun img {
-  width: 120px;
-  height: auto;
-  filter: drop-shadow(0 0 15px #47ff99);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.pumpfun img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 25px #66ffaa);
-}
-.contract-section {
-  text-align: center;
-  padding: 60px 20px;
-  color: #fff;
-  background: transparent;
-}
-
 .contract-section h2 {
   font-size: 2rem;
   color: #b565ff;
   text-shadow: 0 0 10px #a855f7;
+  margin-bottom: 10px;
 }
-
 .contract-section p {
-  font-size: 1.2rem;
   color: #e0b3ff;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
 }
-
 .pumpfun img {
-  width: 100px;
+  width: 92px;
   height: auto;
+  display: block;
+  margin: 10px auto 0;
   filter: drop-shadow(0 0 12px #47ff99);
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform .25s ease, filter .25s ease;
 }
-
 .pumpfun img:hover {
-  transform: scale(1.1);
+  transform: translateY(-2px) scale(1.06);
   filter: drop-shadow(0 0 20px #66ffaa);
 }
-.contract-section {
-  margin-top: 40px;
-}
+
+/* Remove large empty hero space now that the Join button is gone */
+.hero { min-height: 56vh; padding-top: 120px; }
+.hero-content p { margin-bottom: 6px; }
