@@ -6,42 +6,13 @@ body {
   line-height: 1.6;
 }
 
-.hero {
-  background-color: #130027;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  color: #fff;
-}
-
-.hero p {
-  color: #ccc;
-  max-width: 600px;
-  margin: 10px auto 20px;
-}
-
-.btn {
-  background-color: #b565ff;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #9b42ff;
-}
-
+/* NAVIGATION */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 60px;
+  background-color: #130027;
 }
 
 .logo {
@@ -51,7 +22,7 @@ body {
 }
 
 .logo img {
-  height: 30px;
+  height: 35px;
 }
 
 .logo span {
@@ -79,19 +50,27 @@ body {
   color: #b565ff;
 }
 
-.cta {
-  background-color: #b565ff;
-  padding: 10px 22px;
-  border-radius: 25px;
-  color: white;
-  font-weight: 600;
-  transition: background-color 0.3s;
+/* HERO */
+.hero {
+  text-align: center;
+  background-color: #130027;
+  padding: 80px 20px 100px;
 }
 
-.cta:hover {
-  background-color: #9b42ff;
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 700;
 }
 
+.hero-content p {
+  color: #ccc;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+/* SECTIONS */
 .section {
   text-align: center;
   padding: 80px 20px;
@@ -106,31 +85,9 @@ body {
 
 .section p {
   color: #ddd;
-  margin-bottom: 15px;
 }
 
-.tokenomics-list {
-  list-style: none;
-  padding: 0;
-}
-
-.tokenomics-list li {
-  margin: 10px 0;
-  color: #ddd;
-}
-
-.footer {
-  text-align: center;
-  background-color: #0a0017;
-  padding: 40px 20px;
-  color: #888;
-  font-size: 0.9rem;
-}
-
-.footer strong {
-  color: #b565ff;
-}
-
+/* TOKEN CONTRACT */
 .contract-section {
   text-align: center;
   margin-top: 40px;
@@ -147,4 +104,56 @@ body {
 .pumpfun img {
   width: 80px;
   margin-top: 10px;
+}
+
+/* JOIN OUR LINKS */
+.join-section {
+  text-align: center;
+  padding: 70px 20px;
+  background-color: #130027;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.join-section h2 {
+  color: #b565ff;
+  font-size: 1.8rem;
+}
+
+.join-section p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.join-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.join-links .link {
+  background-color: #b565ff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.join-links .link:hover {
+  background-color: #9b42ff;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background-color: #0a0017;
+  padding: 40px 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer strong {
+  color: #b565ff;
 }
