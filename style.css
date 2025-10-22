@@ -1,30 +1,47 @@
-/* === GENERAL RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #0d0020;
-  color: #fff;
+  margin: 0;
+  background-color: #0a0017;
+  color: white;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
-/* === NAVIGATION === */
+.hero {
+  background-color: #130027;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero p {
+  color: #ccc;
+  max-width: 600px;
+  margin: 10px auto 20px;
+}
+
+.btn {
+  background-color: #b565ff;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #9b42ff;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .logo {
@@ -34,28 +51,28 @@ body {
 }
 
 .logo img {
-  height: 32px;
-  width: 32px;
-  border-radius: 8px;
+  height: 30px;
 }
 
 .logo span {
   font-weight: 700;
-  font-size: 1.2rem;
   color: #b565ff;
+  font-size: 1.2rem;
 }
 
 .nav-links {
-  display: flex;
   list-style: none;
-  gap: 28px;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
@@ -64,134 +81,32 @@ body {
 
 .cta {
   background-color: #b565ff;
-  color: #fff !important;
   padding: 10px 22px;
-  border-radius: 30px;
+  border-radius: 25px;
+  color: white;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .cta:hover {
-  background-color: #a855f7;
+  background-color: #9b42ff;
 }
 
-/* === HERO SECTION === */
-.hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-  background: radial-gradient(circle at top, #16003a, #0d0020);
-}
-
-.hero h1 {
-  font-size: clamp(28px, 6vw, 48px);
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #ddd;
-  margin-bottom: 25px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #b565ff;
-  color: white;
-  padding: 14px 32px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #a855f7;
-  transform: translateY(-2px);
-}
-
-/* === TOKEN CONTRACT SECTION === */
-.contract-section {
-  text-align: center;
-  padding: 60px 20px;
-  color: #fff;
-}
-
-.contract-section h2 {
-  color: #b565ff;
-  text-shadow: 0 0 10px #a855f7;
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-
-.contract-section p {
-  color: #e0b3ff;
-  font-size: 1.05rem;
-  margin-bottom: 24px;
-}
-
-.pumpfun img {
-  width: 90px;
-  height: auto;
-  filter: drop-shadow(0 0 15px #a855f7);
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
-
-.pumpfun img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 25px #d8a2ff);
-}
-
-/* === JOIN US SECTION === */
-.join-section {
-  text-align: center;
-  padding: 80px 20px;
-  background: transparent;
-  color: #e0b3ff;
-}
-
-.join-section h2 {
-  color: #b565ff;
-  font-size: 2rem;
-  text-shadow: 0 0 10px #a855f7;
-  margin-bottom: 16px;
-}
-
-.join-links p {
-  margin: 10px 0;
-  font-size: 1.05rem;
-}
-
-.join-links a {
-  color: #a855f7;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.join-links a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-/* === OTHER SECTIONS (ABOUT, ROADMAP, FAQ, etc.) === */
 .section {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 80px 20px;
   text-align: center;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .section h2 {
-  font-size: 2rem;
   color: #b565ff;
-  text-shadow: 0 0 8px #a855f7;
   margin-bottom: 20px;
 }
 
-.section p, .section li {
+.section p {
   color: #ddd;
-  margin-bottom: 14px;
-  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 .tokenomics-list {
@@ -199,45 +114,37 @@ body {
   padding: 0;
 }
 
-/* === FOOTER === */
+.tokenomics-list li {
+  margin: 10px 0;
+  color: #ddd;
+}
+
 .footer {
   text-align: center;
+  background-color: #0a0017;
   padding: 40px 20px;
-  background-color: #0b001b;
-  color: #999;
-  font-size: 0.95rem;
+  color: #888;
+  font-size: 0.9rem;
 }
 
 .footer strong {
   color: #b565ff;
 }
 
-.footer p {
-  margin-bottom: 6px;
+.contract-section {
+  text-align: center;
+  margin-top: 40px;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    gap: 16px;
-  }
+.contract-section h2 {
+  color: #b565ff;
+}
 
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.contract-section p {
+  color: #ccc;
+}
 
-  .hero {
-    padding: 80px 10px 50px;
-  }
-
-  .section {
-    padding: 60px 16px;
-  }
-
-  .btn {
-    padding: 12px 26px;
-    font-size: 0.95rem;
-  }
+.pumpfun img {
+  width: 80px;
+  margin-top: 10px;
 }
