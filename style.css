@@ -117,17 +117,18 @@ body {
 .join-section h2 {
   color: #b565ff;
   font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 .join-section p {
   color: #ccc;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .join-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -143,6 +144,7 @@ body {
 
 .join-links .link:hover {
   background-color: #9b42ff;
+  transform: translateY(-2px);
 }
 
 /* FOOTER */
