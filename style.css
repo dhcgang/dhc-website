@@ -1,161 +1,137 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #0a0017;
-  color: white;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Hands Club (DHC) 💎</title>
 
-/* NAVIGATION */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: #130027;
-}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  <!-- Basic SEO -->
+  <meta name="description" content="Diamond Hands Club (DHC) — a meme-inspired crypto project built by Nicholas Zenchov and Johnny Volkov.">
+  <link rel="canonical" href="https://your-domain.example/">
 
-.logo img {
-  height: 35px;
-}
+  <!-- Social cards -->
+  <meta property="og:title" content="Diamond Hands Club (DHC)">
+  <meta property="og:description" content="Diamond Hands Club (DHC) — a meme-inspired crypto project for true holders.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="social-card.png"> 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diamond Hands Club (DHC)">
+  <meta name="twitter:description" content="Diamond Hands Club (DHC) — a meme-inspired crypto project for true holders.">
 
-.logo span {
-  font-weight: 700;
-  color: #b565ff;
-  font-size: 1.2rem;
-}
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png"> 
+</head>
+<body>
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
+  <!-- Navigation -->
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo"><img src="logo.png" alt="Diamond Hands Club logo"><span>DHC</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#why">Why Join?</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="cta" href="#community">Community</a></li>
+      </ul>
+    </nav>
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
+    <div class="hero-content">
+      <h1>The Diamond Hand Club – Where Legends Hold</h1>
+      <p>If you have diamond hands, you already belong. Step into the club. Become part of crypto history.</p>
+      <a class="btn" href="#community">Join Us</a>
+    </div>
+  </header>
 
-.nav-links a:hover {
-  color: #b565ff;
-}
+  <!-- Token Contract Section -->
+  <section id="contract" class="contract-section">
+    <h2>Token Contract</h2>
+    <p><strong>Address:</strong> Not launched YET!</p>
+    <div class="pumpfun">
+      <a href="https://pump.fun" target="_blank">
+        <img src="pumpfunlogo.png" alt="Pump.fun Logo" />
+      </a>
+    </div>
+  </section> 
 
-/* HERO */
-.hero {
-  text-align: center;
-  background-color: #130027;
-  padding: 80px 20px 100px;
-}
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Diamond Hands Club</h2>
+    <p>
+      Welcome to The Diamond Hand Club, the ultimate meme-coin movement built for those who never fold.
+      This isn’t just another token — it’s a community of fearless holders, visionaries, and degens with diamond-strong conviction.
+    </p>
+    <p>
+      Our mission is simple: reward the bold, celebrate the culture of conviction, and build a movement that stands the test of time.
+      The Diamond Hand Club represents loyalty, unity, and unshakable belief — the qualities that separate legends from the rest.
+    </p>
+    <p>
+      Join a community where every holder counts, every meme matters, and every diamond hand shines brighter together. 💎
+    </p>
+  </section>
 
-.hero-content h1 {
-  font-size: 2.8rem;
-  color: #fff;
-  font-weight: 700;
-}
+  <!-- Why Join -->
+  <section id="why" class="section">
+    <h2>Why Join?</h2>
+    <ul class="tokenomics-list">
+      <li>🔥 A project backed by transparency, community power, and unstoppable momentum.</li>
+      <li>💰 Early adopters gain exclusive access to special rewards, giveaways, and insider perks.</li>
+      <li>🌐 A growing global movement — not just a token, but a lifestyle of conviction.</li>
+    </ul>
+    <p><strong>👉 Welcome to The Diamond Hand Club — where the faithful win. 💎🚀</strong></p>
+  </section>
 
-.hero-content p {
-  color: #ccc;
-  font-size: 1rem;
-  max-width: 700px;
-  margin: 10px auto 0;
-}
+  <!-- Tokenomics -->
+  <section id="tokenomics" class="section">
+    <h2>Tokenomics</h2>
+    <ul class="tokenomics-list">
+      <li>Total Supply: 1,000,000,000 DHC</li>
+      <li>Liquidity Pool: 50%</li>
+      <li>Marketing &amp; Growth: 20%</li>
+      <li>Community Rewards: 20%</li>
+      <li>Team: 10%</li>
+    </ul>
+  </section>
 
-/* SECTIONS */
-.section {
-  text-align: center;
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
+  <!-- Roadmap -->
+  <section id="roadmap" class="section">
+    <h2>Roadmap</h2>
+    <p>
+      <strong>Q4 2025:</strong> Token Launch 🚀<br>
+      <strong>Q1 2026:</strong> Listings &amp; Community Growth 🌐<br>
+      <strong>Q2 2026:</strong> Partnerships 🤝<br>
+      <strong>Q3 2026:</strong> DApp &amp; NFT Integration 💎
+    </p>
+  </section>
 
-.section h2 {
-  color: #b565ff;
-  margin-bottom: 20px;
-}
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>FAQ</h2>
+    <p><strong>What is DHC?</strong><br> DHC stands for Diamond Hands Club — a meme coin for true holders.</p>
+    <p><strong>How can I buy DHC?</strong><br> DHC will be available on decentralized exchanges soon. Stay tuned on X!</p>
+    <p><strong>Who created DHC?</strong><br> DHC is proudly built by <strong>Nicholas Zenchov</strong> and <strong>Johnny Volkov</strong>.</p>
+  </section>
 
-.section p {
-  color: #ddd;
-}
+  <!-- Community -->
+  <section id="community" class="section community">
+    <h2>Join the DHC Community</h2>
+    <p>Follow us and stay updated with the latest DHC news and events.</p>
+    <div class="social-links">
+      <a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a>
+    </div>
+  </section>
 
-/* TOKEN CONTRACT */
-.contract-section {
-  text-align: center;
-  margin-top: 40px;
-}
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Diamond Hands Club (DHC). All rights reserved.</p>
+    <p>Created by <strong>Nicholas Zenchov</strong> &amp; <strong>Johnny Volkov</strong></p>
+  </footer>
 
-.contract-section h2 {
-  color: #b565ff;
-}
-
-.contract-section p {
-  color: #ccc;
-}
-
-.pumpfun img {
-  width: 80px;
-  margin-top: 10px;
-}
-
-/* JOIN OUR LINKS */
-.join-section {
-  text-align: center;
-  padding: 70px 20px;
-  background-color: #130027;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.join-section h2 {
-  color: #b565ff;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.join-section p {
-  color: #ccc;
-  margin-bottom: 25px;
-}
-
-.join-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.join-links .link {
-  background-color: #b565ff;
-  color: white;
-  text-decoration: none;
-  padding: 10px 22px;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.join-links .link:hover {
-  background-color: #9b42ff;
-  transform: translateY(-2px);
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  background-color: #0a0017;
-  padding: 40px 20px;
-  color: #888;
-  font-size: 0.9rem;
-}
-
-.footer strong {
-  color: #b565ff;
-}
+</body>
+</html>
